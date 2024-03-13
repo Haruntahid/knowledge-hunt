@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 function Bookmark({ bookmarks, time }) {
   return (
     <>
@@ -12,8 +14,8 @@ function Bookmark({ bookmarks, time }) {
         </h1>
         {bookmarks.map((bookmark, index) => (
           <h4
-            className="text-2xl p-4 bg-white rounded-lg mb-4 font-semibold"
             key={index}
+            className="text-2xl p-4 bg-white rounded-lg mb-4 font-semibold"
           >
             {bookmark.blog_title}
           </h4>
@@ -22,5 +24,10 @@ function Bookmark({ bookmarks, time }) {
     </>
   );
 }
+
+Bookmark.propTypes = {
+  bookmarks: PropTypes.object,
+  time: PropTypes.number,
+};
 
 export default Bookmark;
