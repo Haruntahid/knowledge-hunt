@@ -3,6 +3,7 @@ import { IoBookmark } from "react-icons/io5";
 
 function Blog({ blog, handelBookmarks, handelTime }) {
   const {
+    id,
     banner,
     blog_title,
     author_name,
@@ -41,7 +42,7 @@ function Blog({ blog, handelBookmarks, handelTime }) {
       ))}
       <div>
         <button
-          onClick={() => handelTime(reading_time)}
+          onClick={() => handelTime(id, reading_time)}
           className="px-5 py-2 underline"
         >
           Mark as Read

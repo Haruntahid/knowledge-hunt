@@ -26,7 +26,7 @@ function Bookmark({ bookmarks, time }) {
 }
 
 Bookmark.propTypes = {
-  bookmarks: PropTypes.object,
+  bookmarks: PropTypes.array,
   time: PropTypes.number,
 };
 
