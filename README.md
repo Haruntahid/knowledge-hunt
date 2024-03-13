@@ -1,4 +1,4 @@
-git commit https://github.com/Haruntahid/knowledge-hunt.git
+git clone https://github.com/Haruntahid/knowledge-hunt.git
 
 npm i
 
